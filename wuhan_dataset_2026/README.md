@@ -6,12 +6,24 @@
 
 ```text
 wuhan_dataset_2026/
-├── 0720static/{log,fig}/
-├── 0804walk/{log,fig}/
-├── 0813walk/{log,fig}/
-├── 0827vehicle/{log,fig}/
-├── 0907vehicle/{log,fig}/
-├── 0915static/{log,fig}/
+├── 0720static/
+│   ├── log/
+│   └── fig/
+├── 0804walk/
+│   ├── log/
+│   └── fig/
+├── 0813walk/
+│   ├── log/
+│   └── fig/
+├── 0827vehicle/
+│   ├── log/
+│   └── fig/
+├── 0907vehicle/
+│   ├── log/
+│   └── fig/
+├── 0915static/
+│   ├── log/
+│   └── fig/
 └── tools/
     ├── apk/
     └── log2data/
@@ -66,12 +78,24 @@ GNSS/IMU data collected from smartphones and smartwatches in Wuhan in 2026. The 
 
 ```text
 wuhan_dataset_2026/
-├── 0720static/{log,fig}/
-├── 0804walk/{log,fig}/
-├── 0813walk/{log,fig}/
-├── 0827vehicle/{log,fig}/
-├── 0907vehicle/{log,fig}/
-├── 0915static/{log,fig}/
+├── 0720static/
+│   ├── log/
+│   └── fig/
+├── 0804walk/
+│   ├── log/
+│   └── fig/
+├── 0813walk/
+│   ├── log/
+│   └── fig/
+├── 0827vehicle/
+│   ├── log/
+│   └── fig/
+├── 0907vehicle/
+│   ├── log/
+│   └── fig/
+├── 0915static/
+│   ├── log/
+│   └── fig/
 └── tools/
     ├── apk/
     └── log2data/

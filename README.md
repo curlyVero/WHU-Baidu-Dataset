@@ -8,13 +8,13 @@
 
 ## 数据下载
 
-完整数据按子数据集打包并发布在本仓库的 [Releases](https://github.com/curlyVero/WHU-Baidu-Dataset/releases) 页面。由于单个数据包较大，每个 `tar.zst` 压缩包被拆分为若干个 `.part-*` 文件。下载同一数据包的全部分卷后，可在 Linux 下合并并解压：
+完整数据发布在本仓库的 [Releases](https://github.com/curlyVero/WHU-Baidu-Dataset/releases) 页面，并按采集日期或批次分别打包。点击所需的 `.tar.zst` 文件即可直接下载。`0720static` 数据量较大，按设备分别提供 Google、Redmi、vivo 和 watch 四个压缩包。
 
 ```bash
-cat WHU-Baidu-Dataset-<subset>.tar.zst.part-* | tar --use-compress-program=unzstd -xf -
+tar --use-compress-program=unzstd -xf <archive>.tar.zst
 ```
 
-其中 `<subset>` 为 `city_dataset_2024`、`city_dataset_2026` 或 `wuhan_dataset_2026`。可使用 Release 中提供的 `SHA256SUMS` 检查下载文件的完整性。
+可使用 Release 中提供的 `SHA256SUMS` 检查下载文件的完整性。
 
 ## 目录结构
 
@@ -62,13 +62,13 @@ The dataset consists of urban vehicle data collected in 2024, urban vehicle data
 
 ## Data Download
 
-The complete data are packaged by subset and published on this repository's [Releases](https://github.com/curlyVero/WHU-Baidu-Dataset/releases) page. Because the archives are large, each `tar.zst` archive is split into multiple `.part-*` files. After downloading all parts of an archive, concatenate and extract them on Linux with:
+The complete data are available from this repository's [Releases](https://github.com/curlyVero/WHU-Baidu-Dataset/releases) page. Data are packaged separately by collection date or batch; click the required `.tar.zst` file to download it directly. Because `0720static` is relatively large, separate archives are provided for the Google, Redmi, vivo, and watch devices.
 
 ```bash
-cat WHU-Baidu-Dataset-<subset>.tar.zst.part-* | tar --use-compress-program=unzstd -xf -
+tar --use-compress-program=unzstd -xf <archive>.tar.zst
 ```
 
-Replace `<subset>` with `city_dataset_2024`, `city_dataset_2026`, or `wuhan_dataset_2026`. Use the `SHA256SUMS` file included with the Release to verify downloaded files.
+Use the `SHA256SUMS` file included with the Release to verify downloaded files.
 
 ## Directory Structure
 
