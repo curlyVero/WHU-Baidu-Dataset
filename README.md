@@ -10,11 +10,13 @@
 
 完整数据发布在本仓库的 [Releases](https://github.com/curlyVero/WHU-Baidu-Dataset/releases) 页面，并按采集日期或批次分别打包。点击所需的 `.tar.zst` 文件即可直接下载。`0720static` 数据量较大，按设备分别提供 Google、Redmi、vivo 和 watch 四个压缩包。
 
+仓库目录提供数据集的可浏览镜像。武汉各批次目录直接包含采集照片，`log/README.md` 列出原始日志文件名、文件大小和对应下载链接。由于原始日志超过 GitHub 普通仓库的单文件大小限制，日志本体保存在 Release 附件中。
+
 ```bash
 tar --use-compress-program=unzstd -xf <archive>.tar.zst
 ```
 
-可使用 Release 中提供的 `SHA256SUMS` 检查下载文件的完整性。
+Release 中的 `SHA256SUMS` 是本数据集发布时生成的文件完整性校验表，不是 GNSS/IMU 观测数据。表中记录每个压缩包的 SHA-256 摘要；下载后可运行 `sha256sum -c SHA256SUMS`，确认文件在下载过程中没有损坏或缺失。
 
 ## 目录结构
 
@@ -42,7 +44,7 @@ dataset_release/
 | `0907vehicle` | 2026-09-07 | 250 | 车载 |
 | `0915static` | 2026-09-15 | 258 | 静态无线连接实验 |
 
-武汉数据批次下的 `log/` 保存 Android GNSS 原始日志。采集 APK 和日志转换工具位于 `wuhan_dataset_2026/tools/`。文件名前缀通常为 `goo`（Google）、`viv`（vivo）、`xia`（Xiaomi）和 `sam`（Samsung）。
+武汉数据批次下的 `log/README.md` 提供 Android GNSS 原始日志清单和下载链接。采集 APK 和日志转换工具位于 `wuhan_dataset_2026/tools/`。文件名前缀通常为 `goo`（Google）、`viv`（vivo）、`xia`（Xiaomi）和 `sam`（Samsung）。
 
 ## 日志采集与转换
 
@@ -64,11 +66,13 @@ The dataset consists of urban vehicle data collected in 2024, urban vehicle data
 
 The complete data are available from this repository's [Releases](https://github.com/curlyVero/WHU-Baidu-Dataset/releases) page. Data are packaged separately by collection date or batch; click the required `.tar.zst` file to download it directly. Because `0720static` is relatively large, separate archives are provided for the Google, Redmi, vivo, and watch devices.
 
+The repository provides a browsable mirror of the dataset structure. Each Wuhan batch directory directly contains its collection photograph, while `log/README.md` lists the raw log names, file sizes, and corresponding download links. The raw logs themselves are stored as Release assets because they exceed GitHub's regular per-file repository limit.
+
 ```bash
 tar --use-compress-program=unzstd -xf <archive>.tar.zst
 ```
 
-Use the `SHA256SUMS` file included with the Release to verify downloaded files.
+The `SHA256SUMS` file was generated for this dataset release and is file-integrity metadata rather than GNSS/IMU observations. It records the SHA-256 digest of each archive. After downloading, run `sha256sum -c SHA256SUMS` to confirm that no archive was corrupted or omitted during transfer.
 
 ## Directory Structure
 
@@ -96,7 +100,7 @@ dataset_release/
 | `0907vehicle` | 2026-09-07 | 250 | Vehicle-mounted |
 | `0915static` | 2026-09-15 | 258 | Static wireless-connectivity experiment |
 
-For the Wuhan batches, `log/` contains raw Android GNSS logs. Collection APKs and log-conversion tools are provided under `wuhan_dataset_2026/tools/`. File-name prefixes are usually `goo` (Google), `viv` (vivo), `xia` (Xiaomi), and `sam` (Samsung).
+For each Wuhan batch, `log/README.md` provides the raw Android GNSS log inventory and download links. Collection APKs and log-conversion tools are provided under `wuhan_dataset_2026/tools/`. File-name prefixes are usually `goo` (Google), `viv` (vivo), `xia` (Xiaomi), and `sam` (Samsung).
 
 ## Log Collection and Conversion
 

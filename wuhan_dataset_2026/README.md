@@ -8,28 +8,28 @@
 wuhan_dataset_2026/
 ├── 0720static/
 │   ├── log/
-│   └── fig/
+│   └── collection.jpg
 ├── 0804walk/
 │   ├── log/
-│   └── fig/
+│   └── collection.jpg
 ├── 0813walk/
 │   ├── log/
-│   └── fig/
+│   └── collection.png
 ├── 0827vehicle/
 │   ├── log/
-│   └── fig/
+│   └── collection.jpg
 ├── 0907vehicle/
 │   ├── log/
-│   └── fig/
+│   └── collection.jpg
 ├── 0915static/
 │   ├── log/
-│   └── fig/
+│   └── collection.png
 └── tools/
     ├── apk/
     └── log2data/
 ```
 
-`log/` 保存 Android GNSS 原始日志，`fig/` 保存采集现场照片。日志可以使用 `tools/log2data/` 转换为 RINEX 观测、IMU 和其他辅助输出。
+仓库中的 `log/README.md` 列出 Android GNSS 原始日志及其 Release 下载链接，采集现场照片直接放在对应批次目录下。下载后的日志可以使用 `tools/log2data/` 转换为 RINEX 观测、IMU 和其他辅助输出。
 
 ## 采集场景
 
@@ -51,11 +51,11 @@ wuhan_dataset_2026/
 
 | `0720static` | `0804walk` |
 | --- | --- |
-| ![0720static 采集现场](0720static/fig/collection.jpg) | ![0804walk 采集现场](0804walk/fig/collection.jpg) |
+| ![0720static 采集现场](0720static/collection.jpg) | ![0804walk 采集现场](0804walk/collection.jpg) |
 | `0813walk` | `0827vehicle` |
-| ![0813walk 采集现场](0813walk/fig/collection.png) | ![0827vehicle 采集现场](0827vehicle/fig/collection.jpg) |
+| ![0813walk 采集现场](0813walk/collection.png) | ![0827vehicle 采集现场](0827vehicle/collection.jpg) |
 | `0907vehicle` | `0915static` |
-| ![0907vehicle 采集现场](0907vehicle/fig/collection.jpg) | ![0915static 采集现场](0915static/fig/collection.png) |
+| ![0907vehicle 采集现场](0907vehicle/collection.jpg) | ![0915static 采集现场](0915static/collection.png) |
 
 ## 日志采集与转换
 
@@ -80,28 +80,28 @@ GNSS/IMU data collected from smartphones and smartwatches in Wuhan in 2026. The 
 wuhan_dataset_2026/
 ├── 0720static/
 │   ├── log/
-│   └── fig/
+│   └── collection.jpg
 ├── 0804walk/
 │   ├── log/
-│   └── fig/
+│   └── collection.jpg
 ├── 0813walk/
 │   ├── log/
-│   └── fig/
+│   └── collection.png
 ├── 0827vehicle/
 │   ├── log/
-│   └── fig/
+│   └── collection.jpg
 ├── 0907vehicle/
 │   ├── log/
-│   └── fig/
+│   └── collection.jpg
 ├── 0915static/
 │   ├── log/
-│   └── fig/
+│   └── collection.png
 └── tools/
     ├── apk/
     └── log2data/
 ```
 
-`log/` contains raw Android GNSS logs, while `fig/` contains photographs of the collection setup and scenes. The logs can be processed with `tools/log2data/` to generate RINEX observations, IMU files, and other auxiliary outputs.
+In the repository mirror, `log/README.md` lists the raw Android GNSS logs and their Release download links, while each collection photograph is placed directly in its batch directory. Downloaded logs can be processed with `tools/log2data/` to generate RINEX observations, IMU files, and other auxiliary outputs.
 
 ## Collection Scenarios
 
@@ -123,11 +123,11 @@ wuhan_dataset_2026/
 
 | `0720static` | `0804walk` |
 | --- | --- |
-| ![0720static collection scene](0720static/fig/collection.jpg) | ![0804walk collection scene](0804walk/fig/collection.jpg) |
+| ![0720static collection scene](0720static/collection.jpg) | ![0804walk collection scene](0804walk/collection.jpg) |
 | `0813walk` | `0827vehicle` |
-| ![0813walk collection scene](0813walk/fig/collection.png) | ![0827vehicle collection scene](0827vehicle/fig/collection.jpg) |
+| ![0813walk collection scene](0813walk/collection.png) | ![0827vehicle collection scene](0827vehicle/collection.jpg) |
 | `0907vehicle` | `0915static` |
-| ![0907vehicle collection scene](0907vehicle/fig/collection.jpg) | ![0915static collection scene](0915static/fig/collection.png) |
+| ![0907vehicle collection scene](0907vehicle/collection.jpg) | ![0915static collection scene](0915static/collection.png) |
 
 ## Log Collection and Conversion
 
