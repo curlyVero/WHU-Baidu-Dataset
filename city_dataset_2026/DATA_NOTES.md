@@ -9,11 +9,11 @@
 - `satellites.txt`：逐历元卫星状态；一行包含多个以 `|` 分隔的卫星记录。
 - `rtk.txt`：RTK 引擎的逐历元、逐卫星中间记录，含嵌套分号字段，不是普通二维 CSV。
 
-## 真值目录 `true`
+## 真值
 
-- `*.ieout`：Inertial Explorer 平滑紧组合 GNSS/INS 结果，包含 WGS84 位置、速度、航向/俯仰/横滚、卫星数、PDOP 和精度指标。
+- 当前发布版本不包含真值数据。
 
-`sensor.txt` 的第一列时间基准和 IMU 轴向定义尚需结合采集程序最终确认。真值文件只删除本机绝对路径，不改数值。
+`sensor.txt` 的第一列时间基准和 IMU 轴向定义尚需结合采集程序最终确认。
 
 ## English Version
 
@@ -28,8 +28,8 @@
 - `satellites.txt`: Per-epoch satellite status; each line contains multiple satellite records separated by `|`.
 - `rtk.txt`: Per-epoch, per-satellite intermediate records from the RTK engine. It contains nested semicolon-delimited fields and is not a conventional two-dimensional CSV.
 
-## Truth Directory `true`
+## Truth Data
 
-- `*.ieout`: Smoothed tightly integrated GNSS/INS results from Inertial Explorer, including WGS84 position, velocity, heading/pitch/roll, satellite count, PDOP, and accuracy indicators.
+- Truth data are not included in the current public release.
 
-The time basis of the first column in `sensor.txt` and the IMU axis convention still require final confirmation against the collection program. Truth files only have local absolute paths removed; their numeric values are unchanged.
+The time basis of the first column in `sensor.txt` and the IMU axis convention still require final confirmation against the collection program.
