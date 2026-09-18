@@ -11,10 +11,6 @@ YYYYMMDD/
 
 手机数据包含原始 Android GNSS 日志、RINEX 观测、基准站观测和部分 RTK 解算结果。
 
-## 采集照片
-
-![车辆采集场景](collection.png)
-
 ## English Version
 
 # City Dataset 2024
@@ -29,7 +25,3 @@ YYYYMMDD/
 ```
 
 Phone data include raw Android GNSS logs, RINEX observations, base-station observations, and RTK solutions for some phones.
-
-## Collection Photo
-
-![Vehicle collection scene](collection.png)

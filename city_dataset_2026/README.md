@@ -11,7 +11,7 @@ YYYYMMDD/
 
 ## 采集照片
 
-![手机摆放与车辆采集场景](collection.jpg)
+![车辆采集场景](collection.png)
 
 ## English Version
 
@@ -28,4 +28,4 @@ YYYYMMDD/
 
 ## Collection Photo
 
-![Phone placement and vehicle collection scene](collection.jpg)
+![Vehicle collection scene](collection.png)
