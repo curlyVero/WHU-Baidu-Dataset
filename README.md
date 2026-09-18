@@ -2,7 +2,7 @@
 
 ## 摘要
 
-本数据集面向智能终端 GNSS 定位与多传感器融合研究。数据覆盖城市车载、操场步行、多设备静态以及 Wi-Fi/蓝牙连接状态切换等场景，包含 Android 原始 GNSS 测量、设备传感器记录以及部分系统定位和 RTK 中间数据。多设备同步参与同一批次采集，便于比较不同厂商、不同终端类型和不同运动状态下的观测质量与定位性能。
+本数据集面向智能终端 GNSS 定位与多传感器融合研究。数据覆盖城市车载、操场步行、多设备静态以及 Wi-Fi/蓝牙连接状态切换等场景，包含 Android 原始 GNSS 测量、设备传感器记录，以及部分系统定位、RTK 相关记录和解算结果。多设备同步参与同一批次采集，便于比较不同厂商、不同终端类型和不同运动状态下的观测质量与定位性能。
 
 数据集由 2024 城市车辆数据、2026 城市车辆数据和 2026 武汉多场景数据组成，可用于智能手机 GNSS 质量分析、单点与精密定位、GNSS/INS 融合、可穿戴设备定位以及无线连接状态对 GNSS 观测影响等研究。武汉数据同时提供配套采集 APK 和跨平台日志转换工具，便于复现从 Android 原始日志到 RINEX、IMU 及其他辅助数据的处理流程。
 
@@ -58,7 +58,7 @@ dataset_release/
 
 ## Abstract
 
-This dataset is designed for research on GNSS positioning and multi-sensor fusion with consumer smart devices. The scenarios include urban driving, playground walking, multi-device static collection, and controlled Wi-Fi/Bluetooth connectivity transitions. The data include raw Android GNSS measurements, device sensor records, and selected system-location and RTK intermediate data. Multiple devices participated in the same collection sessions, enabling comparisons across manufacturers, device types, and motion conditions.
+This dataset is designed for research on GNSS positioning and multi-sensor fusion with consumer smart devices. The scenarios include urban driving, playground walking, multi-device static collection, and controlled Wi-Fi/Bluetooth connectivity transitions. The data include raw Android GNSS measurements, device sensor records, selected system-location outputs, RTK-related records, and positioning solutions. Multiple devices participated in the same collection sessions, enabling comparisons across manufacturers, device types, and motion conditions.
 
 The dataset consists of urban vehicle data collected in 2024, urban vehicle data collected in 2026, and multi-scenario Wuhan data collected in 2026. It supports studies of smartphone GNSS observation quality, standalone and precise positioning, GNSS/INS integration, wearable positioning, and the effects of wireless connectivity on GNSS measurements. The Wuhan subset also includes collection APKs and cross-platform conversion tools, enabling reproducible processing from raw Android logs to RINEX observations, IMU files, and other auxiliary outputs.
 
